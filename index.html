@@ -8,11 +8,17 @@
 </head>
 <body>
     <h1>Todos</h1>
-    <input id="new-todo" type="text" placeholder="Add what to do..." />
-    <button id="add-todo">Add Todo</button>
+    <form id="add-todo">
+        <input id="new-todo" name="todo" type="text" placeholder="Add what to do..." />
+        <button type="submit">Add Todo</button>
+    </form>
     <input id="search-todo" type="text" placeholder="Search Todo" />
+    <label>
+        <input type="checkbox" id="completed">Hide completed
+    </label>
     <div id="todos"></div>
-    
+
+<script src="app-functions.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
