@@ -4,22 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Todo app</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>To-do app</title>
 </head>
 <body>
-    <h1>Todos</h1>
-    <form id="add-todo">
-        <input id="new-todo" name="todo" type="text" placeholder="Add what to do..." />
-        <button type="submit">Add Todo</button>
-    </form>
-    <input id="search-todo" type="text" placeholder="Search Todo" />
-    <label>
-        <input type="checkbox" id="completed">Hide completed
-    </label>
-    <div id="todos"></div>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">To-do App</h1>
+            <h2 class="header__subtitle">What do you need to do?</h2>
+        </div>
+    </div>
+
+    <div class="actions">
+        <div class="actions__container">
+            <input id="search-todo" class="input" type="text" placeholder="Search Todo" />
+            <label class="checkbox">
+                <input type="checkbox" id="completed">Hide completed
+            </label>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="todos" class=""></div>
+        <form id="add-todo">
+            <input id="new-todo" name="text" type="text" class="input" placeholder="Add what to do..." />
+            <button type="submit" class="button">Add Todo</button>
+        </form>
+    </div>
+    
+
+    
 
 <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
-<script src="app-functions.js"></script>
-<script src="app.js"></script>
+<script src="/scripts/app-functions.js"></script>
+<script src="/scripts/app.js"></script>
 </body>
 </html>
